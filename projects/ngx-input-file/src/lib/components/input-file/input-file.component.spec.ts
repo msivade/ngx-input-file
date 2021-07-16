@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { InputFileComponent } from './input-file.component';
 import { InputFileService } from '../../services/input-file.service';
@@ -13,7 +13,7 @@ describe('InputFileComponent', () => {
   let component: InputFileComponent;
   let fixture: ComponentFixture<InputFileComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ InputFileComponent ],
         imports: [CommonModule,
